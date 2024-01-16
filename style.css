@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans&display=swap');
+:root{
+    --border-color: rgb(54, 49, 49);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Martel Sans', 
+    sans-serif;
+}
+.main-container{
+    background-color: black;
+}
+.home{
+    background-image: url(./assets/images/bg.jpg);
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-bottom: 10px solid rgb(187, 175, 175);
+}
+.box{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    opacity: 0.5;
+}
+.container{
+    max-width: 80vw;
+    margin: auto;
+    position: relative;
+    padding: 32px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    width: 148px;
+    height: 40px;
+    /* background-color: red; */
+    color: red;
+}
+.right{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.area-hidden img{
+    color: white;
+    position: relative;
+    left: 20px;
+    top: 5px;
+    z-index: 1;
+}
+ select{
+    width: 125px;
+    height: 32px;
+    border-radius: 5px;
+    background: rgba(22,22,22,0.7);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 7px;
+}
+.right button{
+    width: 76px;
+    height: 32px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+select option{
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    z-index: 10;
+    margin-top: 10%;
+}
+.content h1{
+    font-size: 50px;
+    font-weight: bold; 
+}
+.join{
+    font-size: 24px;
+    margin-top: -10px;
+}
+.content p{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.email{
+    width: 370px;
+    height: 56px;
+    padding: 10px;
+    background: black;
+    opacity: 0.4;
+    color: white;
+    border: 1px solid white;
+    margin-right: 2px;
+    border-radius: 4px;
+}
+.content .email::placeholder{
+    color: #ccc;
+}
+.btn{
+    width: 208px;
+    height: 56px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    border-radius: 4px;
+    border: none;
+}
+.content .email:focus{
+    outline: 2px solid white;
+}
+.content .btn:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.tv, .desktop{
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+}
+.tv, .desktop, .mobile{
+    padding: 40px 0;
+}
+.tv .content, .desktop .content, .mobile .content{
+    margin: 0 0 30px;
+}
+.border{
+    width: 100%;
+    height: 10px;
+    background-color: var(--border-color);
+}
+.image img{
+    position: relative;
+    z-index: 10;
+}
+.image video{
+    position: relative;
+    bottom: 80%;
+    left: 12%;
+}
+.mobile{
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.4;
+}
+.card{
+    background-color: black;
+    border: 1px solid var(--border-color);
+    height: 95px;
+    width: 310px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: relative;
+    z-index: 10;
+    bottom: 136px;
+    left: 163px;
+    padding: 8px;
+    border-radius: 15px;
+}
+.mobile .card-content{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    margin-left: -25px;
+}
+.card-content #download{
+    color: #0071EB;
+}
+.card img{
+    height: 100%;
+}
+.card .gif{
+    height: 50%;
+    padding-right: 12px;
+}
+.desktop .image{
+    position: relative;
+}
+.desktop video{
+    position: absolute;
+    height: 249px;
+    width: 393px;
+    left: 19%;
+    top: 8%;
+}
+.faq{
+    color: white;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    flex-direction: column;
+}
+.faq h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.questions{
+    display: flex;
+    font-size: 26px;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    padding: 35px 14px;
+    background-color: #313131;
+    margin: 4px 0;
+}
+.questions .plus{
+    font-size: 40px;
+}
+.questions:hover{
+    cursor: pointer;
+}
+.faq #input{
+    margin: 30px 0 15px;
+}
+footer{
+    height: 50vh;
+    color: #FFFFFFB3;
+    font-size: 14px;
+}
+footer select{
+    color: #FFFFFFB3;
+}
+footer .links{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+footer p{
+    margin: 15px 0;
+}
+footer p:hover{
+    cursor: pointer;
+}
+footer span{
+    text-decoration: underline;
+}
+footer li{
+    list-style: none;
+    text-decoration: underline;
+    padding: 5px;
+}
+footer li:hover{
+    cursor: pointer;
+}
